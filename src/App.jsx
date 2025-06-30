@@ -92,6 +92,8 @@ function App() {
       const monto = parseFloat(precio);
       const precioFinal = monto * (1 + tasaRecuperar) * (1 + tasaBanco);
       const tna = ((1 + tasaRecuperar) * (1 + tasaBanco) - 1) / parseFloat(plazo) * 365;
+
+      filtradas.push({
         MontoFacturado: `$${(monto * (1 + tasaRecuperar)).toFixed(2)}`,
         Banco: "Otra alternativa",
         Forma: "-",
